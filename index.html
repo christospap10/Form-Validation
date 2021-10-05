@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="" id="form">
+        <div class="title">Get Started</div>
+        <!--user name input-->
+        <div>
+          <label for="username">User Name</label>
+          <i class="bx bx-user"></i>
+          <input type="text" name="username" id="username" placeholder="Name" />
+          <i class="bx bxs-error-circle failure-icon"></i>
+          <i class="bx bx-check-square success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!--email input-->
+        <div>
+          <label for="email">Email</label>
+          <i class="bx bx-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+          />
+          <i class="bx bxs-error-circle failure-icon"></i>
+          <i class="bx bx-check-square success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!--password input-->
+        <div>
+          <label for="password">Passwrod</label>
+          <i class="bx bx-lock-alt"></i>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="password here"
+          />
+          <i class="bx bxs-error-circle failure-icon"></i>
+          <i class="bx bx-check-square success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
